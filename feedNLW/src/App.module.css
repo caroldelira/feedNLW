@@ -1,0 +1,19 @@
+.wrapper {
+  max-width: 70rem;
+  margin: 2rem auto; /* largura lateral auto pra deixar sempre central */
+  padding: 0 1rem; /* se diminuir pra menor que 70rem ele da um padding de 1 rem */
+
+  display: grid;
+  grid-template-columns: 256px 1fr; /* uma coluna com larg fixa 256px e a outra é 1fragmento ou seja se adapta pro que sobrar */
+  gap: 2rem;
+  align-items: flex-start; /*alinhar a partir do topo, onde iniciar o bloco */
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

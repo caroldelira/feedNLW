@@ -1,0 +1,15 @@
+.avatar {
+  box-sizing: initial; /* nao altera o tamanho do conteudo ao colocar bordas no elemento */
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+}
+
+.avatarWithBorder {
+  box-sizing: initial; /* nao altera o tamanho do conteudo ao colocar bordas no elemento */
+  width: 3rem;
+  height: 3rem;
+  border-radius: 8px;
+  border: 4px solid var(--gray-800);
+  outline: 2px solid var(--secondary-300);
+}
